@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderCampsite({ campsite }) {
+const RenderCampsite = ({ campsite }) => {
     return (
         <div className="col-md-5 m-1">
             <Card>
@@ -15,7 +15,7 @@ function RenderCampsite({ campsite }) {
     );
 }
 
-function RenderComments({ comments }) {
+const RenderComments = ({ comments }) => {
     if (comments) {
         return (
             <div className="col-md-5 m-1">
@@ -28,7 +28,7 @@ function RenderComments({ comments }) {
 
 }
 
-function CampsiteInfo(props) {
+const CampsiteInfo = (props) => {
     if (props.campsite) {
         return (
             <div className="container">

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderDirectoryItem({campsite}) {
+const RenderDirectoryItem = ({campsite}) =>{
     return (
         <Card>
             <Link to={`/directory/${campsite.id}`}>
@@ -15,7 +15,7 @@ function RenderDirectoryItem({campsite}) {
     );
 }
 
-function Directory(props) {
+const Directory = (props) => {
 
     const directory = props.campsites.map(campsite => {
         return (
