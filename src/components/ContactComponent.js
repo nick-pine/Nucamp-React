@@ -17,7 +17,7 @@ class Contact extends Component {
             email: '',
             agree: false,
             contactType: 'By Phone',
-            feedback: ''
+            feedback: '',
             touched: {
                 firstName: false,
                 lastName: false,
